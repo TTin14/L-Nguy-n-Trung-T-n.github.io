@@ -13,7 +13,7 @@
   <section class="main">
   <div class="profile-card">
     <div class="image">
-      <img src="https://ibb.co/DNLtk3L" alt="" class="profile-pic">
+      <a href="https://ibb.co/DNLtk3L"><img src="https://i.ibb.co/4cJ7MBJ/123.jpg" alt="123" border="0"></a>
     </div>
     <div class="data">
       <h2>Lê Nguyễn Trung Tín</h2>
