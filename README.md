@@ -16,7 +16,7 @@
       <img src="https://ibb.co/DNLtk3L" alt="" class="profile-pic">
     </div>
     <div class="data">
-      <h2>Doraemon</h2>
+      <h2>Lê Nguyễn Trung Tín</h2>
       <span>Developer & Designer</span>
     </div>
     <div class="row">
