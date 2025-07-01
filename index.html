@@ -1,43 +1,113 @@
+
 <!DOCTYPE html>
-<!---Coding By CoderGirl!--->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Profle Card UI Design | CoderGirl </title>
-  <!---Custom Css File!--->
-  <link rel="stylesheet" href="style.css">
+  <title>Doraemon Profile Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      width: 300px;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    p.role {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .stats div {
+      text-align: center;
+    }
+
+    .stats div b {
+      display: block;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      background: linear-gradient(to right, #fc67fa, #7fdfff);
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn.secondary {
+      background: linear-gradient(to right, #7fdfff, #fc67fa);
+    }
+  </style>
 </head>
 <body>
-  <section class="main">
-  <div class="profile-card">
-    <div class="image">
-      <img src="https://ibb.co/DNLtk3L" alt="" class="profile-pic">
-    </div>
-    <div class="data">
-      <h2>Lê Nguyễn Trung Tín</h2>
-      <span>Developer & Designer</span>
-    </div>
-    <div class="row">
-      <div class="info">
-        <h3>Following</h3>
-        <span>12</span>
-      </div>
-      <div class="info">
-        <h3>Followers</h3>
-        <span>50.000</span>
-      </div>
-      <div class="info">
-        <h3>Posts</h3>
-        <span>29</span>
-      </div>
+  <div class="card">
+    <img src="https://i.imgur.com/nKaB8ZC.png" alt="Doraemon" class="avatar">
+    <h2>Doraemon</h2>
+    <p class="role">Developer & Designer</p>
+    <div class="stats">
+      <div><b>Following</b>120</div>
+      <div><b>Followers</b>5000</div>
+      <div><b>Posts</b>209</div>
     </div>
     <div class="buttons">
-      <a href="#" class="btn">Message</a>
-      <a href="#" class="btn">Follow Me</a>
+      <button class="btn">Message</button>
+      <button class="btn secondary">Follow Me</button>
     </div>
   </div>
-</section>
 </body>
 </html>
